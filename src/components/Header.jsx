@@ -11,8 +11,8 @@ const Header = () => {
   const navigate = useNavigate();
 
   const navigationHandler = (type) => {
-    if (type === "movies") {
-      navigate("/explore/movies");
+    if (type === "movie") {
+      navigate("/explore/movie");
       setMobileMenu(false);
     } else {
       navigate("/explore/tv");
@@ -57,7 +57,7 @@ const Header = () => {
             <ul className="flex flex-col gap-2">
               <li
                 className="hover:text-pink cursor-pointer w-fit"
-                onClick={() => navigationHandler("movies")}
+                onClick={() => navigationHandler("movie")}
               >
                 Movies
               </li>
